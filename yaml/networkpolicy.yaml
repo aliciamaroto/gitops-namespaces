@@ -1,0 +1,7 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: app-01-deny-by-default
+spec:
+  podSelector: {}
+  ingress: []
