@@ -4,5 +4,5 @@ metadata:
   name: clusterrole-app-02
 rules:
   - apiGroups: [""]
-    resources: ["clusterroles"]
+    resources: ["roles"]
     verbs: ["get", "list", "create", "delete", "patch", "watch"]
