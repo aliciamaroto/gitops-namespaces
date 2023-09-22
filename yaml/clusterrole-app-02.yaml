@@ -3,6 +3,6 @@ kind: ClusterRole
 metadata:
   name: clusterrole-app-02
 rules:
-  - apiGroups: [""]
+  - apiGroups: ["rbac.authorization.k8s.io"]
     resources: ["roles"]
     verbs: ["get", "list", "create", "delete", "patch", "watch"]
