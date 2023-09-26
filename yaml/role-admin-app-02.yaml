@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-annotations:
+  annotations:
     argocd.argoproj.io/sync-wave: "-1"
   name: admin-role-app-02
   namespace: application-02
