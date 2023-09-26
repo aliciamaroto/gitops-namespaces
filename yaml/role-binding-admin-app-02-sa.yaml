@@ -2,12 +2,12 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
-  name: rolebinding-admin-app-02
+    argocd.argoproj.io/sync-wave: "-1"
+  name: rolebinding-admin-app-02-sa
   namespace: application-02  
 subjects:
-- kind: Group
-  name: gitops-users  
+- kind: Service Account
+  name: openshift-gitops-sa
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
