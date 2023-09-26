@@ -4,6 +4,6 @@ metadata:
   name: admin-role-app-02
   namespace: application-02
 rules:
-- apiGroups: '*'
-  resources: '*'
-  verbs: '*'
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
